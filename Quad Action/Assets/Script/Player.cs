@@ -164,6 +164,7 @@ public class Player : MonoBehaviour
                 rigidGrenade.AddForce(nextVec, ForceMode.Impulse);
                 rigidGrenade.AddTorque(Vector3.back * 10, ForceMode.Impulse);
 
+/*수류탄 사용 완료 코드*/
                 hasGrenades--; //보유 수류탄 -1
                 grenades[hasGrenades].SetActive(false); //공전 수류탄 수도 hasGrenades값 참조하여 비활성화
             }
