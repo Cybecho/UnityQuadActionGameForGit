@@ -9,6 +9,7 @@ public class Player : MonoBehaviour
     public bool[] hasWeapons; //무기를 가지고있는지 아닌지 확인하는 배열
     public GameObject[] grenades; //플레이어 주위를 공전하는 수류탄을 만들기 위해서
     public int hasGrenades;
+    public GameObject grenadeObjects; //던져질 수류탄 오브젝트
     public Camera followCamera;
     //플레이어에게 탄약 동전 체력 수류탄 변수를 생성
     public int ammo;
@@ -26,6 +27,7 @@ public class Player : MonoBehaviour
     bool jDown; //점프가j 눌렸나? space
     bool iDown; //아이템이i 눌렸나? e
     bool fDown; //공격이f 눌렸나?
+    bool gDown; //수류탄이g 눌렸나? 마우스우클릭
     bool rDown; //장전 r 이 눌렸나? r
     bool sDown1; //아이템변경(swuap) 이 눌렸냐? 1
     bool sDown2; //아이템변경(swuap) 이 눌렸냐? 2
@@ -59,6 +61,7 @@ public class Player : MonoBehaviour
         Move();
         Turn();
         Jump();
+        Grenade();
         Attack();
         Dodge();
         Swap();
@@ -74,6 +77,7 @@ public class Player : MonoBehaviour
         wDown = Input.GetButton("Walk");
         jDown = Input.GetButtonDown("Jump"); //GetButtonDown은 버튼이 눌린 순간에만 함수호출
         fDown = Input.GetButton("Fire1");
+        gDown = Input.GetButtonDown("Fire2");
         rDown = Input.GetButtonDown("Reroad");
         iDown = Input.GetButtonDown("Interaction");
         sDown1 = Input.GetButtonDown("Swap1");
@@ -132,6 +136,37 @@ public class Player : MonoBehaviour
             anim.SetBool("IsJump", true);
             anim.SetTrigger("doJump");
             isJump = true;
+        }
+    }
+
+    void Grenade()
+    {
+        if(hasGrenades == 0)
+            return;
+        if(gDown && !isReroad && !isSwap)
+        {
+/*수류탄 투척 위치 코드*/
+            Ray ray = followCamera.ScreenPointToRay(Input.mousePosition); //스크린에서 월드로 Ray를 쏘는 함수
+            RaycastHit rayHit;
+            
+            //레이케스트 함수에서 ray가 어딘가에 닿았다면 rayHit에 저장해준다. 이때 저장할때 쓰는 함수가 바로 out
+            if(Physics.Raycast(ray, out rayHit, 100)) //out : return 처럼 반환값을 주어진 변수에 저장하는 키워드
+            {
+                //RaytHit의 마우스 클릭 위치를 활용하여 회전을 구현
+                //히트의 포인트가 있는데 ray가 닿았던 지점이다. 그곳에서 플레이어의 위치를 빼면 상대 위치가 나온다
+                Vector3 nextVec = rayHit.point - transform.position;
+                nextVec.y = 10; //던지는 효과가 나도록 높이값인 y를 높게 고정한다
+                //그 위치로 플레이어가 돌아보면 된다
+
+/*수류탄 날라댕기는 부분 코드*/
+                GameObject instantGrenade = Instantiate(grenadeObjects, transform.position, transform.rotation);
+                Rigidbody rigidGrenade = instantGrenade.GetComponent<Rigidbody>();
+                rigidGrenade.AddForce(nextVec, ForceMode.Impulse);
+                rigidGrenade.AddTorque(Vector3.back * 10, ForceMode.Impulse);
+
+                hasGrenades--; //보유 수류탄 -1
+                grenades[hasGrenades].SetActive(false); //공전 수류탄 수도 hasGrenades값 참조하여 비활성화
+            }
         }
     }
 
