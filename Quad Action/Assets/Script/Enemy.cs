@@ -1,21 +1,53 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.AI;
 public class Enemy : MonoBehaviour
 {
     public int maxHealth;
     public int curHealth;
+    public Transform target; //목표물을 설정하는 트랜스폼 변수 생성
+    public bool isChase = false; //추적을 하냐 안하냐
 
     Rigidbody rigid;
     BoxCollider boxCollider;
     Material mat;
-
-    private void Awake()
+    NavMeshAgent nav;
+    Animator anim;
+    void Awake()
     {
         rigid = GetComponent<Rigidbody>();
         boxCollider = GetComponent<BoxCollider>();
-        mat = GetComponent<MeshRenderer>().material;
+        mat = GetComponentInChildren<MeshRenderer>().material;
+        nav = GetComponent<NavMeshAgent>();
+        anim = GetComponentInChildren<Animator>();
+
+        Invoke("ChaseStart",2); //추격하는 함수를 2초뒤에 실행한다
+    }
+    void ChaseStart()
+    {
+        isChase = true;
+        anim.SetBool("isWalk",true);
+    }
+    void Update()
+    {
+        //도착할 목표 위치를 지정하는 함수
+        //isChase상태일때만 추적을 시작한다
+        if(isChase)
+            nav.SetDestination(target.position);
+    }
+    void FreezeVelocity()
+    {
+        if(isChase) //추격상태일때만
+        {
+             //플레이어와 닿았을 때 플레이어의 리지드바디에의해 물리값을 가지지 않도록
+            rigid.velocity = Vector3.zero; //물리적인속도
+            rigid.angularVelocity = Vector3.zero; //회전력
+        }
+    }
+    void FixedUpdate() 
+    {
+        FreezeVelocity();
     }
 
     private void OnTriggerEnter(Collider other) 
@@ -65,7 +97,9 @@ public class Enemy : MonoBehaviour
         {
             mat.color = Color.gray;
             gameObject.layer = 14;
-
+            isChase = false; //추격함수를 종료
+            nav.enabled = false; //네비게이션 컴포넌트도 비활성화
+            anim.SetTrigger("doDie"); //사망 애니메이션 포함
             //수류탄에 피격되었을때
             if (isGrenade)
             {

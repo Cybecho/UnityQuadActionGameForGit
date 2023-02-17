@@ -352,7 +352,7 @@ public class Player : MonoBehaviour
         //첫번째는 포지션 두번째는 방향 세번째는 길이 네번째는 레이어마스크
         isBorder = Physics.Raycast(transform.position, transform.forward, 3, LayerMask.GetMask("Wall"));
     }
-
+    
     void FreezeRotation()
     {
         //angularVelocity = 물리 회전 속도
