@@ -39,10 +39,12 @@ public class Player : MonoBehaviour
     bool isFireReady = true; //지금은 공격상태다를 알려주기 위함
     bool isReroad = false;
     bool isBorder; //벽과 닿았나 안닿았나?
+    bool isDamage; //무적타임부여
     Vector3 moveVec;
     Vector3 dodgeVec;
     Rigidbody rigid;
     Animator anim;
+    MeshRenderer[] meshs; //팔,다리 몸통별로 따로따로 메쉬렌더러를 가지고 있기 때문에 배열로 선언
     GameObject nearObject;
     Weapon equipweapon; //장착하고있는 무기의 메쉬 //Weapon.cs의 클래스를 사용해야하기 때문
     int equipweaponIndex = -1;
@@ -53,6 +55,9 @@ public class Player : MonoBehaviour
         anim = GetComponentInChildren<Animator>();
         //플레이어 프리팹의 자식에서 컴포넌트를 받아오겠다
         //플레이어 프리팹의 Animator를 anim에 담음
+
+        meshs = GetComponentsInChildren<MeshRenderer>();
+        //요소를 여러개 가져올땐 Compent's' 복수형이다
     }
 
     void Update()
@@ -281,8 +286,31 @@ public class Player : MonoBehaviour
             }
             Destroy(other.gameObject);
         }
+        else if(other.tag == "EnemyBullet")
+        {   if(!isDamage)
+            {
+                Bullet enemyBullet = other.GetComponent<Bullet>();
+                health -= enemyBullet.damage;
+                StartCoroutine(OnDamage());
+            }
+        }
     }
+    IEnumerator OnDamage() //플레이어가 적의 총알의 데미지를 입었을 때
+    {
+        isDamage = true; //데미지를 입는 상태다(무적타임 ture)
+        foreach(MeshRenderer mesh in meshs) //메쉬렌더러 mesh에서 mehs까지
+        {
+            
+            mesh.material.color = Color.yellow; //isDamage가 true라면 한대 맞은 효과로 노란색이 되겠슴다
+        }
+        yield return new WaitForSeconds(1f); //1초동안 무적
 
+        isDamage = false; //데미지를 입지 않는 상태
+        foreach(MeshRenderer mesh in meshs) //메쉬렌더러 mesh에서 mehs까지
+        {
+            mesh.material.color = Color.white; //isDamage가 false라면 화이트로 되돌리겠슴다
+        }
+    }
     void OnTriggerStay(Collider other) 
     {
         if(other.tag == "Weapon")

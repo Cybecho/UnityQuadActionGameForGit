@@ -7,7 +7,9 @@ public class Enemy : MonoBehaviour
     public int maxHealth;
     public int curHealth;
     public Transform target; //목표물을 설정하는 트랜스폼 변수 생성
-    public bool isChase = false; //추적을 하냐 안하냐
+    public BoxCollider meleeArea;
+    public bool isChase; //추적을 하냐 안하냐
+    public bool isAttack; //공격을 하냐 안하냐
 
     Rigidbody rigid;
     BoxCollider boxCollider;
@@ -33,8 +35,9 @@ public class Enemy : MonoBehaviour
     {
         //도착할 목표 위치를 지정하는 함수
         //isChase상태일때만 추적을 시작한다
-        if(isChase)
+        if(nav.enabled) //네비게이션이 활성화 되어있을때만
             nav.SetDestination(target.position);
+            nav.isStopped = !isChase;
     }
     void FreezeVelocity()
     {
@@ -45,8 +48,47 @@ public class Enemy : MonoBehaviour
             rigid.angularVelocity = Vector3.zero; //회전력
         }
     }
+    //스피어 레이케스팅 활용해서 넓은 데미지 범위를 만들것입니다
+    void Targeting()
+    {
+        float targetRadius = 1.5f;
+        float targerRange = 3f;
+
+        //부피가 있는 레이케스트를 활용하여 피격범위 설정
+        //범위내에있는놈들 싹다 죽여야하기때문에 배열로 생성
+        //SphereCastAll(시작위치,반지름,레이케스트발사방향,레이케스트길이,레이어마스크) 구체모양의 레이캐스팅
+        RaycastHit[] rayHits = Physics.SphereCastAll(transform.position, 
+                                                    targetRadius,transform.forward,targerRange,
+                                                    LayerMask.GetMask("Player"));
+        Debug.DrawRay(transform.position, transform.forward * targerRange,Color.green);
+        //rayHits변수에 데이터가 들어오면 공격 코루틴 실행
+        //만약 공격 범위 안에 플레이어가 들어왔다면?
+        if(rayHits.Length > 0 && !isAttack)
+        {
+            StartCoroutine(Attack());
+        }
+    }
+
+    IEnumerator Attack()
+    {
+        isChase = false; //쫓아가지 않는 상태 활성화
+        isAttack = true; //공격상태 활성화
+        anim.SetBool("isAttack",true); //공격 애니메이션 활성화
+
+        yield return new WaitForSeconds(0.5f);
+        meleeArea.enabled = true; //공격범위 활성화
+
+        yield return new WaitForSeconds(1f);
+        meleeArea.enabled = false; //공격범위 비활성화
+
+        yield return new WaitForSeconds(1f);
+        isChase = true;
+        isAttack = false;
+        anim.SetBool("isAttack",false);
+    }
     void FixedUpdate() 
     {
+        Targeting();
         FreezeVelocity();
     }
 
