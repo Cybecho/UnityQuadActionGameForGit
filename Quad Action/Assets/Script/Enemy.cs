@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.AI;
 public class Enemy : MonoBehaviour
 {
+    public enum Type {A,B,C}; //몬스터 타입을 결정하기 위한 타입설정
+    public Type enemyType;
     public int maxHealth;
     public int curHealth;
     public Transform target; //목표물을 설정하는 트랜스폼 변수 생성
@@ -36,8 +38,10 @@ public class Enemy : MonoBehaviour
         //도착할 목표 위치를 지정하는 함수
         //isChase상태일때만 추적을 시작한다
         if(nav.enabled) //네비게이션이 활성화 되어있을때만
-            nav.SetDestination(target.position);
-            nav.isStopped = !isChase;
+        {
+        nav.SetDestination(target.position);
+        nav.isStopped = !isChase;
+        }
     }
     void FreezeVelocity()
     {
