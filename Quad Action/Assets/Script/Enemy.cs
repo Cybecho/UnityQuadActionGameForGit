@@ -10,6 +10,7 @@ public class Enemy : MonoBehaviour
     public int curHealth;
     public Transform target; //목표물을 설정하는 트랜스폼 변수 생성
     public BoxCollider meleeArea;
+    public GameObject bullet;
     public bool isChase; //추적을 하냐 안하냐
     public bool isAttack; //공격을 하냐 안하냐
 
@@ -55,8 +56,23 @@ public class Enemy : MonoBehaviour
     //스피어 레이케스팅 활용해서 넓은 데미지 범위를 만들것입니다
     void Targeting()
     {
-        float targetRadius = 1.5f;
-        float targerRange = 3f;
+        float targetRadius = 0;
+        float targerRange = 0;
+
+        switch (enemyType) {
+            case Type.A:
+                targetRadius = 1.5f;
+                targerRange = 3f;
+                break;
+            case Type.B:
+                targetRadius = 1f;
+                targerRange = 12f;
+                break;
+            case Type.C:
+                targetRadius = 0.1f;
+                targerRange = 25f;
+                break;
+        }
 
         //부피가 있는 레이케스트를 활용하여 피격범위 설정
         //범위내에있는놈들 싹다 죽여야하기때문에 배열로 생성
@@ -79,13 +95,40 @@ public class Enemy : MonoBehaviour
         isAttack = true; //공격상태 활성화
         anim.SetBool("isAttack",true); //공격 애니메이션 활성화
 
-        yield return new WaitForSeconds(0.5f);
-        meleeArea.enabled = true; //공격범위 활성화
+        switch (enemyType)
+        {
+            case Type.A:
+                yield return new WaitForSeconds(0.5f);
+                meleeArea.enabled = true; //공격범위 활성화
 
-        yield return new WaitForSeconds(1f);
-        meleeArea.enabled = false; //공격범위 비활성화
+                yield return new WaitForSeconds(1f);
+                meleeArea.enabled = false; //공격범위 비활성화
 
-        yield return new WaitForSeconds(1f);
+                yield return new WaitForSeconds(2f);
+                break;
+            case Type.B:
+                //0.1초 뒤에 앞방향으로 돌격하며 공격범위 활성화
+                yield return new WaitForSeconds(0.2f);
+                rigid.AddForce(transform.forward * 40, ForceMode.Impulse);
+                meleeArea.enabled = true;
+                //돌격 끝나고 멈춰 세운 후에 공격범위 비활성화
+                yield return new WaitForSeconds(0.5f);
+                rigid.velocity = Vector3.zero;
+                meleeArea.enabled = false;
+
+                yield return new WaitForSeconds(2f);
+                break;
+            case Type.C:
+                yield return new WaitForSeconds(0.5f);
+                //총알 게임오브젝트 인스턴트 생성 (프리팹 , 생성위치, 생성각도) Enemy기준으로 생성됨
+                GameObject instantBullet = Instantiate(bullet, transform.position, transform.rotation);
+                Rigidbody rigidBullet = instantBullet.GetComponent<Rigidbody>();
+                rigidBullet.velocity = transform.forward * 20;
+
+                yield return new WaitForSeconds(2f);
+                break;
+        }
+        
         isChase = true;
         isAttack = false;
         anim.SetBool("isAttack",false);

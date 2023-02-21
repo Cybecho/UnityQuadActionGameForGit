@@ -289,7 +289,7 @@ public class Player : MonoBehaviour
         else if(other.tag == "EnemyBullet")
         {   if(!isDamage)
             {
-                Bullet enemyBullet = other.GetComponent<Bullet>();
+                Bullet_Enemy enemyBullet = other.GetComponent<Bullet_Enemy>();
                 health -= enemyBullet.damage;
                 StartCoroutine(OnDamage());
             }
