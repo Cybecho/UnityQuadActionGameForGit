@@ -1242,6 +1242,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 10
+  isMelee: 1
 --- !u!1001 &672860734
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7073,6 +7074,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 834275754}
   offset: {x: 0, y: 26, z: -15}
+  player: {fileID: 834275751}
 --- !u!1 &1142302330 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 328409505970683906, guid: 464cc7c4f7ea10b47a36d7848aa9ca9a, type: 3}
@@ -23103,3 +23105,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 10
+  isMelee: 1

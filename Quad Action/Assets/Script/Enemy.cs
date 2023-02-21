@@ -121,9 +121,9 @@ public class Enemy : MonoBehaviour
             case Type.C:
                 yield return new WaitForSeconds(0.5f);
                 //총알 게임오브젝트 인스턴트 생성 (프리팹 , 생성위치, 생성각도) Enemy기준으로 생성됨
-                GameObject instantBullet = Instantiate(bullet, transform.position, transform.rotation);
+                GameObject instantBullet = Instantiate(bullet, transform.position + new Vector3(0f, 2.5f, 0f), transform.rotation);
                 Rigidbody rigidBullet = instantBullet.GetComponent<Rigidbody>();
-                rigidBullet.velocity = transform.forward * 20;
+                rigidBullet.velocity = transform.forward * 30;
 
                 yield return new WaitForSeconds(2f);
                 break;
