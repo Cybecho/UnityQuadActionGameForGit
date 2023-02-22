@@ -4990,6 +4990,7 @@ MonoBehaviour:
   isMelee: 0
   effectObj: {fileID: 9003287710763244400}
   maeshObj: {fileID: 2941405008458181039}
+  type: 1
 --- !u!1001 &7693259515495366449
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5004,6 +5005,14 @@ PrefabInstance:
     - target: {fileID: 1599315238913598529, guid: 5b963fe8250746d4ca1da430817cf6f3, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3167732299336555663, guid: 5b963fe8250746d4ca1da430817cf6f3, type: 3}
+      propertyPath: lengthInSec
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3167732299336555663, guid: 5b963fe8250746d4ca1da430817cf6f3, type: 3}
+      propertyPath: moveWithTransform
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3322664071572938699, guid: 5b963fe8250746d4ca1da430817cf6f3, type: 3}
       propertyPath: m_RootOrder
@@ -5050,8 +5059,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8638940641552346735, guid: 5b963fe8250746d4ca1da430817cf6f3, type: 3}
+      propertyPath: moveWithTransform
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8638940641552346735, guid: 5b963fe8250746d4ca1da430817cf6f3, type: 3}
       propertyPath: EmissionModule.rateOverDistance.scalar
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b963fe8250746d4ca1da430817cf6f3, type: 3}

@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.AI;
 public class Enemy : MonoBehaviour
 {
-    public enum Type {A,B,C}; //몬스터 타입을 결정하기 위한 타입설정
+    public enum Type {A,B,C,D}; //몬스터 타입을 결정하기 위한 타입설정
     public Type enemyType;
     public int maxHealth;
     public int curHealth;
@@ -16,18 +16,18 @@ public class Enemy : MonoBehaviour
 
     Rigidbody rigid;
     BoxCollider boxCollider;
-    Material mat;
+    MeshRenderer[] meshs;
     NavMeshAgent nav;
     Animator anim;
     void Awake()
     {
         rigid = GetComponent<Rigidbody>();
         boxCollider = GetComponent<BoxCollider>();
-        mat = GetComponentInChildren<MeshRenderer>().material;
+        meshs = GetComponentsInChildren<MeshRenderer>();
         nav = GetComponent<NavMeshAgent>();
         anim = GetComponentInChildren<Animator>();
-
-        Invoke("ChaseStart",2); //추격하는 함수를 2초뒤에 실행한다
+        if(enemyType != Type.D)
+            Invoke("ChaseStart",2); //추격하는 함수를 2초뒤에 실행한다
     }
     void ChaseStart()
     {
@@ -38,7 +38,7 @@ public class Enemy : MonoBehaviour
     {
         //도착할 목표 위치를 지정하는 함수
         //isChase상태일때만 추적을 시작한다
-        if(nav.enabled) //네비게이션이 활성화 되어있을때만
+        if(nav.enabled && enemyType != Type.D) //네비게이션이 활성화 되어있을때만
         {
         nav.SetDestination(target.position);
         nav.isStopped = !isChase;
@@ -56,36 +56,39 @@ public class Enemy : MonoBehaviour
     //스피어 레이케스팅 활용해서 넓은 데미지 범위를 만들것입니다
     void Targeting()
     {
-        float targetRadius = 0;
-        float targerRange = 0;
-
-        switch (enemyType) {
-            case Type.A:
-                targetRadius = 1.5f;
-                targerRange = 3f;
-                break;
-            case Type.B:
-                targetRadius = 1f;
-                targerRange = 12f;
-                break;
-            case Type.C:
-                targetRadius = 0.1f;
-                targerRange = 25f;
-                break;
-        }
-
-        //부피가 있는 레이케스트를 활용하여 피격범위 설정
-        //범위내에있는놈들 싹다 죽여야하기때문에 배열로 생성
-        //SphereCastAll(시작위치,반지름,레이케스트발사방향,레이케스트길이,레이어마스크) 구체모양의 레이캐스팅
-        RaycastHit[] rayHits = Physics.SphereCastAll(transform.position, 
-                                                    targetRadius,transform.forward,targerRange,
-                                                    LayerMask.GetMask("Player"));
-        Debug.DrawRay(transform.position, transform.forward * targerRange,Color.green);
-        //rayHits변수에 데이터가 들어오면 공격 코루틴 실행
-        //만약 공격 범위 안에 플레이어가 들어왔다면?
-        if(rayHits.Length > 0 && !isAttack)
+        if(enemyType != Type.D)
         {
-            StartCoroutine(Attack());
+            float targetRadius = 0;
+            float targerRange = 0;
+
+            switch (enemyType) {
+                case Type.A:
+                    targetRadius = 1.5f;
+                    targerRange = 3f;
+                    break;
+                case Type.B:
+                    targetRadius = 1f;
+                    targerRange = 12f;
+                    break;
+                case Type.C:
+                    targetRadius = 0.1f;
+                    targerRange = 25f;
+                    break;
+            }
+
+            //부피가 있는 레이케스트를 활용하여 피격범위 설정
+            //범위내에있는놈들 싹다 죽여야하기때문에 배열로 생성
+            //SphereCastAll(시작위치,반지름,레이케스트발사방향,레이케스트길이,레이어마스크) 구체모양의 레이캐스팅
+            RaycastHit[] rayHits = Physics.SphereCastAll(transform.position, 
+                                                        targetRadius,transform.forward,targerRange,
+                                                        LayerMask.GetMask("Player"));
+            Debug.DrawRay(transform.position, transform.forward * targerRange,Color.green);
+            //rayHits변수에 데이터가 들어오면 공격 코루틴 실행
+            //만약 공격 범위 안에 플레이어가 들어왔다면?
+            if(rayHits.Length > 0 && !isAttack)
+            {
+                StartCoroutine(Attack());
+            }
         }
     }
 
@@ -172,7 +175,8 @@ public class Enemy : MonoBehaviour
 
     IEnumerator OnDamage(Vector3 reactVec, bool isGrenade)
     {
-        mat.color = Color.red;
+        foreach (MeshRenderer mesh in meshs)
+            mesh.material.color = Color.red;
         reactVec = reactVec.normalized;
         reactVec += Vector3.up;
         rigid.AddForce(reactVec * 3, ForceMode.Impulse);
@@ -180,11 +184,13 @@ public class Enemy : MonoBehaviour
 
         if(curHealth > 0)
         {
-            mat.color = Color.white;
+            foreach (MeshRenderer mesh in meshs)
+                mesh.material.color = Color.white;
         }
         else
         {
-            mat.color = Color.gray;
+            foreach (MeshRenderer mesh in meshs)
+                mesh.material.color = Color.gray;
             gameObject.layer = 14;
             isChase = false; //추격함수를 종료
             nav.enabled = false; //네비게이션 컴포넌트도 비활성화
@@ -209,7 +215,9 @@ public class Enemy : MonoBehaviour
             
             yield return new WaitForSeconds(1.0f);
             boxCollider.enabled = false;
-            Destroy(gameObject, 1);
+            
+            if(enemyType == Type.D)
+                Destroy(gameObject, 2);
         }
     }
 

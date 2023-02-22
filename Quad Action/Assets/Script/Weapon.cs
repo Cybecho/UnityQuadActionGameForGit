@@ -65,6 +65,7 @@ public class Weapon : MonoBehaviour
         Vector3 caseVec = bulletCasePos.forward * Random.Range(-3, -2) + Vector3.up * Random.Range(2,3);
         caseRigid.AddForce(caseVec,ForceMode.Impulse); //힘을 가해서 총알 튀올라가게
         caseRigid.AddTorque(Vector3.up * -10 , ForceMode.Impulse);
+        yield return null;
     }
 
     //일반함수 : Use() 함수를 메인루트라고할때 Swing()이라는 함수를 호출하면 서브루틴이라고 한다
