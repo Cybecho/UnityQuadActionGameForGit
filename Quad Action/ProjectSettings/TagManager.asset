@@ -12,6 +12,7 @@ TagManager:
   - Bullet
   - Enemy
   - EnemyBullet
+  - Ragne
   layers:
   - Default
   - TransparentFX

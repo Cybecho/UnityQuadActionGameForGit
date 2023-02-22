@@ -7,7 +7,9 @@ public class Follow : MonoBehaviour
     public Transform target;
     public Vector3 offset;
     public Player player;
-    int compareHealth;
+    public int compareHealth;
+    public int shakeIntencity = 3;
+    public bool isDamage;
     
     void Start()
     {
@@ -15,16 +17,35 @@ public class Follow : MonoBehaviour
     }
     void Update()
     {
-        //해당 스크립트는 타겟의 포지션에 오프셋을 더한 값이다
-        transform.position = target.position + offset;
+        decreaseHealth();
+        switch (isDamage)
+        {
+            case false:
+                transform.position = target.position + offset;
+                break;
+            case true:
+                CameraShake();
+                Invoke("isDamageOff",0.3f);
+                break;
+        }
+    }
+    void decreaseHealth()
+    {
         if (compareHealth > player.health)
         {
             compareHealth = player.health;
+            isDamage = true;
         }
     }
 
+    void isDamageOff()
+    {
+        isDamage = false;
+    }
     void CameraShake()
     {
-        
+    transform.position = new Vector3((target.position.x + Random.Range(-shakeIntencity, shakeIntencity))
+                                            , (target.position.y + Random.Range(-shakeIntencity, shakeIntencity))
+                                            , (target.position.z + Random.Range(-shakeIntencity, shakeIntencity))) + offset;
     }
 }

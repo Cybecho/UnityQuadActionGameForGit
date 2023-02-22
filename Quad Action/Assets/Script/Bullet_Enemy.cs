@@ -72,7 +72,7 @@ public class Bullet_Enemy : MonoBehaviour
                 Debug.Log("몬스터 미사일 플레이어와 충돌");
                 maeshObj.SetActive(false);
                 effectObj.SetActive(true);
-                Destroy(gameObject,5);
+                Destroy(gameObject,2f);
             }
         }
 

@@ -474,6 +474,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1509416925549156319, guid: a2e051660762cbe4494c17a095a95e10, type: 3}
+      propertyPath: m_TagString
+      value: Ragne
+      objectReference: {fileID: 0}
     - target: {fileID: 2285952976136801637, guid: a2e051660762cbe4494c17a095a95e10, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -1075,6 +1079,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 547435428816858648, guid: 203326381d9b54d489646c6c2f61f53a, type: 3}
+      propertyPath: m_TagString
+      value: Ragne
+      objectReference: {fileID: 0}
     - target: {fileID: 924136447322616994, guid: 203326381d9b54d489646c6c2f61f53a, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -1243,6 +1251,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 10
   isMelee: 1
+  effectObj: {fileID: 0}
+  maeshObj: {fileID: 0}
 --- !u!1001 &672860734
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7075,6 +7085,9 @@ MonoBehaviour:
   target: {fileID: 834275754}
   offset: {x: 0, y: 26, z: -15}
   player: {fileID: 834275751}
+  compareHealth: 0
+  shakeIntencity: 1
+  isDamage: 0
 --- !u!1 &1142302330 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 328409505970683906, guid: 464cc7c4f7ea10b47a36d7848aa9ca9a, type: 3}
@@ -23106,3 +23119,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 10
   isMelee: 1
+  effectObj: {fileID: 0}
+  maeshObj: {fileID: 0}
