@@ -13,12 +13,13 @@ public class Enemy : MonoBehaviour
     public GameObject bullet;
     public bool isChase; //추적을 하냐 안하냐
     public bool isAttack; //공격을 하냐 안하냐
+    public bool isDead; //죽었나 안죽었나
 
-    Rigidbody rigid;
-    BoxCollider boxCollider;
-    MeshRenderer[] meshs;
-    NavMeshAgent nav;
-    Animator anim;
+    public Rigidbody rigid;
+    public BoxCollider boxCollider;
+    public MeshRenderer[] meshs;
+    public NavMeshAgent nav;
+    public Animator anim;
     void Awake()
     {
         rigid = GetComponent<Rigidbody>();
@@ -56,7 +57,7 @@ public class Enemy : MonoBehaviour
     //스피어 레이케스팅 활용해서 넓은 데미지 범위를 만들것입니다
     void Targeting()
     {
-        if(enemyType != Type.D)
+        if(!isDead && enemyType != Type.D)
         {
             float targetRadius = 0;
             float targerRange = 0;
@@ -192,6 +193,7 @@ public class Enemy : MonoBehaviour
             foreach (MeshRenderer mesh in meshs)
                 mesh.material.color = Color.gray;
             gameObject.layer = 14;
+            isDead = true;
             isChase = false; //추격함수를 종료
             nav.enabled = false; //네비게이션 컴포넌트도 비활성화
             anim.SetTrigger("doDie"); //사망 애니메이션 포함

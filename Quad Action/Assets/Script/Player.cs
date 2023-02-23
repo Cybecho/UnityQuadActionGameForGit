@@ -291,16 +291,19 @@ public class Player : MonoBehaviour
             {
                 Bullet_Enemy enemyBullet = other.GetComponent<Bullet_Enemy>();
                 health -= enemyBullet.damage;
-                /*
-                //Bullet_Enemy 에서 디스트로이는 이미 구현함
-                if(other.GetComponent<Rigidbody>() != null)
-                    Destroy(other.gameObject);
-                */
-                StartCoroutine(OnDamage());
+                
+                bool isBossAtk = other.name == "BossMelleArea";
+                StartCoroutine(OnDamage(isBossAtk));
             }
+
+            /*
+            //Bullet_Enemy 에서 디스트로이는 이미 구현함
+            if(other.GetComponent<Rigidbody>() != null)
+            Destroy(other.gameObject);
+            */
         }
     }
-    IEnumerator OnDamage() //플레이어가 적의 총알의 데미지를 입었을 때
+    IEnumerator OnDamage(bool isBossAtk) //플레이어가 적의 총알의 데미지를 입었을 때
     {
         isDamage = true; //데미지를 입는 상태다(무적타임 ture)
         foreach(MeshRenderer mesh in meshs) //메쉬렌더러 mesh에서 mehs까지
@@ -308,6 +311,9 @@ public class Player : MonoBehaviour
             
             mesh.material.color = Color.yellow; //isDamage가 true라면 한대 맞은 효과로 노란색이 되겠슴다
         }
+        //보스공격을 맞았을땐 그냥 뒤로 넉백을 줘버리자
+        if(isBossAtk)
+            rigid.AddForce(transform.forward * -25, ForceMode.Impulse);
         yield return new WaitForSeconds(1f); //1초동안 무적
 
         isDamage = false; //데미지를 입지 않는 상태
