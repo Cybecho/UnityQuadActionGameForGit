@@ -7055,14 +7055,14 @@ MonoBehaviour:
   enemyType: 0
   maxHealth: 100
   curHealth: 100
-  target: {fileID: 0}
-  meleeArea: {fileID: 0}
-  bullet: {fileID: 0}
+  target: {fileID: 834275754}
+  meleeArea: {fileID: 1478433490}
+  bullet: {fileID: 281864374626612511, guid: 0259d04708e4e9f4898df2e01c772b97, type: 3}
   isChase: 0
   isAttack: 0
-  missile: {fileID: 0}
-  missilePortA: {fileID: 0}
-  missilePortB: {fileID: 0}
+  missile: {fileID: 3128473589960327726, guid: 6e07b9d7e99cdcd4e85386365b724987, type: 3}
+  missilePortA: {fileID: 69168940}
+  missilePortB: {fileID: 1251994768}
 --- !u!1 &1192292855
 GameObject:
   m_ObjectHideFlags: 0
