@@ -40,6 +40,7 @@ public class Player : MonoBehaviour
     bool isReroad = false;
     bool isBorder; //벽과 닿았나 안닿았나?
     bool isDamage; //무적타임부여
+    bool isShop;
     Vector3 moveVec;
     Vector3 dodgeVec;
     Rigidbody rigid;
@@ -185,7 +186,7 @@ public class Player : MonoBehaviour
         fireDelay += Time.deltaTime; //공격 딜레이에 시간을 더해주고 공격가능 여부 확인
         isFireReady = equipweapon.rate < fireDelay; //공격속도보다 파이어딜레이가 크면 true가 저장된다
         
-        if(fDown && isFireReady && !isDodge && !isSwap)
+        if(fDown && isFireReady && !isDodge && !isSwap && !isShop)
         {
             equipweapon.Use(); //Weapon.cs 내부에 Use() 함수 실행
             anim.SetTrigger(equipweapon.type == Weapon.Type.Melee ? "doSwing" : "doShot");
@@ -207,7 +208,7 @@ public class Player : MonoBehaviour
         if (ammo == 0)
             return;
         
-        if(rDown && !isJump && !isDodge && !isSwap && isFireReady)
+        if(rDown && !isJump && !isDodge && !isSwap && isFireReady && !isShop)
         {
             anim.SetTrigger("doReload");
             isReroad = true;
@@ -324,7 +325,7 @@ public class Player : MonoBehaviour
     }
     void OnTriggerStay(Collider other) 
     {
-        if(other.tag == "Weapon")
+        if(other.tag == "Weapon" || other.tag == "Shop")
             nearObject = other.gameObject;
         //콜라디어 내에 있는 값들 출력
         //Debug.Log(nearObject.name);
@@ -334,6 +335,13 @@ public class Player : MonoBehaviour
     {
         if(other.tag == "Weapon")
             nearObject = null;
+        else if(other.tag == "Shop")
+        {
+            Shop shop = nearObject.GetComponent<Shop>();
+            shop.Exit();
+            isShop = false;
+            nearObject = null;
+        }
     }
 
     void Swap()
@@ -373,16 +381,22 @@ public class Player : MonoBehaviour
     void Interaction()
     {
     if(iDown && nearObject != null && !isJump && !isDodge) //만약 아이템이 눌린상태라면 (e가눌린상태라면)
-    {
-        if(nearObject.tag == "Weapon")
         {
-            Item item = nearObject.GetComponent<Item>();
-            int weaponsIndex = item.value;
-            hasWeapons[weaponsIndex] = true;
+            if(nearObject.tag == "Weapon")
+            {
+                Item item = nearObject.GetComponent<Item>();
+                int weaponsIndex = item.value;
+                hasWeapons[weaponsIndex] = true;
 
-            Destroy(nearObject);
+                Destroy(nearObject);
+            }
+            else if(nearObject.tag == "Shop")
+            {
+                Shop shop = nearObject.GetComponent<Shop>();
+                shop.Enter(this); //자기 자신(현재는 Player.cs)을 넣어준다
+                isShop = true;
+            }
         }
-    }
     }
 
     void StopToWal()
