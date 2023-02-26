@@ -367,6 +367,7 @@
 "Assets/Script/Orbit.cs"
 "Assets/Script/Player.cs"
 "Assets/Script/Shop.cs"
+"Assets/Script/StartZone.cs"
 "Assets/Script/Weapon.cs"
 -langversion:9.0
 

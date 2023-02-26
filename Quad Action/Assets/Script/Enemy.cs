@@ -8,9 +8,12 @@ public class Enemy : MonoBehaviour
     public Type enemyType;
     public int maxHealth;
     public int curHealth;
+    public int score; //죽었을때 플레이어에게 점수를 주기 위함
+    public GameManager manager;
     public Transform target; //목표물을 설정하는 트랜스폼 변수 생성
     public BoxCollider meleeArea;
     public GameObject bullet;
+    public GameObject[] coins; //죽었을때 뿌릴 코인
     public bool isChase; //추적을 하냐 안하냐
     public bool isAttack; //공격을 하냐 안하냐
     public bool isDead; //죽었나 안죽었나
@@ -197,6 +200,32 @@ public class Enemy : MonoBehaviour
             isChase = false; //추격함수를 종료
             nav.enabled = false; //네비게이션 컴포넌트도 비활성화
             anim.SetTrigger("doDie"); //사망 애니메이션 포함
+            
+            //죽었을때 플레이어에게 점수를 주는 부분
+            Player player = target.GetComponent<Player>();
+            player.score += score;
+            
+            //죽었을때 동전뱉는 부분
+            int ranCoin = Random.Range(0, 3);
+            Instantiate(coins[ranCoin], transform.position, Quaternion.identity);
+            
+            //각 몬스터 타입에 맞게 카운트를 감소시키기
+            switch (enemyType)
+            {
+                case Type.A:
+                    manager.enemyCntA--;
+                    break;
+                case Type.B:
+                    manager.enemyCntB--;
+                    break;
+                case Type.C:
+                    manager.enemyCntC--;
+                    break;
+                case Type.D:
+                    manager.enemyCntD--;
+                    break;
+            }
+            
             //수류탄에 피격되었을때
             if (isGrenade)
             {
@@ -218,8 +247,7 @@ public class Enemy : MonoBehaviour
             yield return new WaitForSeconds(1.0f);
             boxCollider.enabled = false;
             
-            if(enemyType == Type.D)
-                Destroy(gameObject, 2);
+            Destroy(gameObject, 2);
         }
     }
 

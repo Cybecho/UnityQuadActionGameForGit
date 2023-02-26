@@ -11,6 +11,7 @@ public class Player : MonoBehaviour
     public int hasGrenades;
     public GameObject grenadeObjects; //던져질 수류탄 오브젝트
     public Camera followCamera;
+    public GameManager manager;
     //플레이어에게 탄약 동전 체력 수류탄 변수를 생성
     public int ammo;
     public int coin;
@@ -42,6 +43,7 @@ public class Player : MonoBehaviour
     bool isBorder; //벽과 닿았나 안닿았나?
     bool isDamage; //무적타임부여
     bool isShop;
+    bool isDead;
     Vector3 moveVec;
     Vector3 dodgeVec;
     Rigidbody rigid;
@@ -104,7 +106,7 @@ public class Player : MonoBehaviour
         if(isDodge)
             moveVec = dodgeVec;
         
-        if(isSwap || !isFireReady || isReroad)
+        if(isSwap || !isFireReady || isReroad || isDead)
             moveVec = Vector3.zero;
         
         if(!isBorder)
@@ -120,7 +122,7 @@ public class Player : MonoBehaviour
         //#1 키보드에 의해 결정되는 시점
         transform.LookAt(transform.position + moveVec);
         //#2 마우스에 의해 결정되는 시점
-        if (fDown && !isFireReady && (equipweapon.type == Weapon.Type.Melee || equipweapon.type == Weapon.Type.Range))
+        if (fDown && !isDead && !isFireReady && (equipweapon.type == Weapon.Type.Melee || equipweapon.type == Weapon.Type.Range))
         {
             Ray ray = followCamera.ScreenPointToRay(Input.mousePosition); //스크린에서 월드로 Ray를 쏘는 함수
             RaycastHit rayHit;
@@ -140,7 +142,7 @@ public class Player : MonoBehaviour
 
     void Jump()
     {
-        if(jDown && moveVec == Vector3.zero && !isJump && !isSwap)
+        if(jDown && moveVec == Vector3.zero && !isJump && !isSwap && !isDead)
         {
             rigid.AddForce(Vector3.up * 15, ForceMode.Impulse);
             anim.SetBool("IsJump", true);
@@ -153,7 +155,7 @@ public class Player : MonoBehaviour
     {
         if(hasGrenades == 0)
             return;
-        if(gDown && !isReroad && !isSwap)
+        if(gDown && !isReroad && !isSwap && !isDead)
         {
 /*수류탄 투척 위치 코드*/
             Ray ray = followCamera.ScreenPointToRay(Input.mousePosition); //스크린에서 월드로 Ray를 쏘는 함수
@@ -190,7 +192,7 @@ public class Player : MonoBehaviour
         fireDelay += Time.deltaTime; //공격 딜레이에 시간을 더해주고 공격가능 여부 확인
         isFireReady = equipweapon.rate < fireDelay; //공격속도보다 파이어딜레이가 크면 true가 저장된다
         
-        if(fDown && isFireReady && !isDodge && !isSwap && !isShop)
+        if(fDown && isFireReady && !isDodge && !isSwap && !isShop && !isDead)
         {
             equipweapon.Use(); //Weapon.cs 내부에 Use() 함수 실행
             anim.SetTrigger(equipweapon.type == Weapon.Type.Melee ? "doSwing" : "doShot");
@@ -212,7 +214,7 @@ public class Player : MonoBehaviour
         if (ammo == 0)
             return;
         
-        if(rDown && !isJump && !isDodge && !isSwap && isFireReady && !isShop)
+        if(rDown && !isJump && !isDodge && !isSwap && isFireReady && !isShop && !isDead)
         {
             anim.SetTrigger("doReload");
             isReroad = true;
@@ -231,7 +233,7 @@ public class Player : MonoBehaviour
 
     void Dodge()
     {
-        if(jDown && moveVec != Vector3.zero && !isJump && !isDodge && !isSwap)
+        if(jDown && moveVec != Vector3.zero && !isJump && !isDodge && !isSwap && !isDead)
         {
             //방향전환을 막기위해서
             //현재 방향값을 받아온다
@@ -326,6 +328,21 @@ public class Player : MonoBehaviour
         {
             mesh.material.color = Color.white; //isDamage가 false라면 화이트로 되돌리겠슴다
         }
+
+        if(isBossAtk)
+            rigid.velocity = Vector3.zero;
+        
+        //플레이어의 체력이 0 이하면 죽음 함수 호출
+        if(health <= 0)
+            OnDie();
+    }
+    //플레이어 죽음 함수
+    void OnDie()
+    {
+        anim.SetTrigger("doDie");
+        isDead = true;
+        //Player.cs는 위 작업만 하도록 하고 나머지는 매니저에 모두 넘긴다
+        manager.GameOver();
     }
     void OnTriggerStay(Collider other) 
     {
@@ -384,7 +401,7 @@ public class Player : MonoBehaviour
 
     void Interaction()
     {
-    if(iDown && nearObject != null && !isJump && !isDodge) //만약 아이템이 눌린상태라면 (e가눌린상태라면)
+    if(iDown && nearObject != null && !isJump && !isDodge && !isDead) //만약 아이템이 눌린상태라면 (e가눌린상태라면)
         {
             if(nearObject.tag == "Weapon")
             {
