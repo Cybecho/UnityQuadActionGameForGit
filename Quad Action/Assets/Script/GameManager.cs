@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI; //UI를 다루기 위해선 해당 라이브러리 활성화
+using UnityEngine.SceneManagement; //Scene 관련 함수를 사용하려면 해당 라이브러리 활성화
 
 public class GameManager : MonoBehaviour
 {
@@ -29,6 +30,7 @@ public class GameManager : MonoBehaviour
     //UI를 위한 변수설정
     public GameObject menuPanel;
     public GameObject gamePanel;
+    public GameObject overPanel;
     public Text maxScoreTxt;
     public Text scoreTxt; //gamePanel 상단부
     public Text stageTxt;
@@ -45,6 +47,8 @@ public class GameManager : MonoBehaviour
     public Image weaponRImg;
     public RectTransform bossHealthGroup; //보스 HP를 활성화시키는 스위치
     public RectTransform bossHealthBar; //보스 피통
+    public Text curScoreText;
+    public Text bestText; //Best! 를 띄울 변수
 
     void Awake() 
     {
@@ -62,7 +66,6 @@ public class GameManager : MonoBehaviour
         //싸울때만 플레이타임을 더할것임
         if(isBattle)
             playTime  += Time.deltaTime;
-        
     }
 
     public void GameStart()
@@ -79,7 +82,22 @@ public class GameManager : MonoBehaviour
 
     public void GameOver()
     {
-        
+        gamePanel.SetActive(false); //게임UI 끄고
+        overPanel.SetActive(true); //게임오버 UI 키고
+        curScoreText.text = scoreTxt.text; //그냥 현재 얻은 점수 가져온다
+
+        int maxScore = PlayerPrefs.GetInt("MaxScore"); //유니티에 저장된 플레이어의 최대점수를 max score에 저장
+        if(player.score > maxScore)
+        {
+            bestText.gameObject.SetActive(true); //Best! 텍스트를 활성화
+            PlayerPrefs.SetInt("MaxScore",player.score); //MaxScore에 Int를 set한다 player.score 값을
+        }
+    }
+    //게임 오버 후, 메인 타이틀로 돌아가기 위해 재시작 함수 생성
+    public void Restart()
+    {
+        //씬이 하나밖에 없기 때문에 그냥 0눌러주면 된다
+        SceneManager.LoadScene(0);
     }
 
     //스테이지 시작, 종료 함수 생성

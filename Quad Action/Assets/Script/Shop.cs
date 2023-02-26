@@ -38,7 +38,7 @@ public class Shop : MonoBehaviour
     {
         //우리가 선택한 아이템의 가격은 아이템가격의 인덱스를 참조한다
         int price = itemPrice[index];
-        //만약 부족하다면
+        //만약 돈이 부족하다면
         if(price > enterPlayer.coin)
         {
             StopCoroutine(Talk()); //만약 이미 코루틴이 실행중이라면 꼬일수있기때문에 코드를 종료시켜준다

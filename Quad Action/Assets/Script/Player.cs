@@ -321,6 +321,11 @@ public class Player : MonoBehaviour
         //보스공격을 맞았을땐 그냥 뒤로 넉백을 줘버리자
         if(isBossAtk)
             rigid.AddForce(transform.forward * -25, ForceMode.Impulse);
+        
+        //플레이어의 체력이 0 이하면 죽음 함수 호출
+        if(health <= 0 && !isDead)
+            OnDie();
+        
         yield return new WaitForSeconds(1f); //1초동안 무적
 
         isDamage = false; //데미지를 입지 않는 상태
@@ -328,13 +333,9 @@ public class Player : MonoBehaviour
         {
             mesh.material.color = Color.white; //isDamage가 false라면 화이트로 되돌리겠슴다
         }
-
+        
         if(isBossAtk)
             rigid.velocity = Vector3.zero;
-        
-        //플레이어의 체력이 0 이하면 죽음 함수 호출
-        if(health <= 0)
-            OnDie();
     }
     //플레이어 죽음 함수
     void OnDie()
