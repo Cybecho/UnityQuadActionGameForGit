@@ -59,6 +59,9 @@ public class Player : MonoBehaviour
 
         meshs = GetComponentsInChildren<MeshRenderer>();
         //요소를 여러개 가져올땐 Compent's' 복수형이다
+        Debug.Log(PlayerPrefs.GetInt("MaxScore"));
+        PlayerPrefs.SetInt("MaxScore",112500);
+        //유니티에서 기본 제공하는 저장기능
     }
 
     void Update()
