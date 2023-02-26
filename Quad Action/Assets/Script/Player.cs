@@ -20,6 +20,7 @@ public class Player : MonoBehaviour
     public int maxCoin;
     public int maxHealth;
     public int maxHasGrenades;
+    public int score;
 
     float hAxis;
     float vAxis;
@@ -47,7 +48,7 @@ public class Player : MonoBehaviour
     Animator anim;
     MeshRenderer[] meshs; //팔,다리 몸통별로 따로따로 메쉬렌더러를 가지고 있기 때문에 배열로 선언
     GameObject nearObject;
-    Weapon equipweapon; //장착하고있는 무기의 메쉬 //Weapon.cs의 클래스를 사용해야하기 때문
+    public Weapon equipweapon; //장착하고있는 무기의 메쉬 //Weapon.cs의 클래스를 사용해야하기 때문
     int equipweaponIndex = -1;
     float fireDelay; //공격캔슬을 막기 위한 딜레이
     void Awake()

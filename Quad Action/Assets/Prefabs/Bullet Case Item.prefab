@@ -94,10 +94,10 @@ GameObject:
   - component: {fileID: 8382879724998673958}
   - component: {fileID: 1176123679979380336}
   - component: {fileID: 1176123679979380339}
-  - component: {fileID: 7391700397532074580}
+  - component: {fileID: 2629822683324599273}
   m_Layer: 0
   m_Name: Bullet Case Item
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -147,7 +147,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.3, y: 0.2, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &7391700397532074580
+--- !u!114 &2629822683324599273
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -156,7 +156,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 9159802803880631452}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e3c0b2d057cc8743928702f530a6dc8, type: 3}
+  m_Script: {fileID: 11500000, guid: e88091f6571bc2b4eac0002bfbbbe1d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 0
+  type: 0
+  value: 50

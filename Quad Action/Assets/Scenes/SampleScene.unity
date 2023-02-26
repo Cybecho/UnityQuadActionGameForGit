@@ -380,7 +380,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!81 &35989224
 AudioListener:
   m_ObjectHideFlags: 0
@@ -484,7 +484,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &36097571
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1943,7 +1943,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\uCCB4\uB825"
+  m_Text: "\uD574\uBA38"
 --- !u!222 &268881306
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4507,7 +4507,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\uD0C4\uC57D"
+  m_Text: "\uD578\uB4DC\uAC74"
 --- !u!222 &676890784
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5249,12 +5249,14 @@ MonoBehaviour:
   grenadeObjects: {fileID: 7275513765542721990, guid: f646e28dc99e50643805dfc47405649f, type: 3}
   followCamera: {fileID: 963194227}
   ammo: 100
-  coin: 9000
+  coin: 50000
   health: 100
   maxAmmo: 999
   maxCoin: 9999
   maxHealth: 100
   maxHasGrenades: 4
+  score: 0
+  equipweapon: {fileID: 0}
 --- !u!136 &834275752
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -10510,7 +10512,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!81 &963194226
 AudioListener:
   m_ObjectHideFlags: 0
@@ -11301,7 +11303,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\uCCB4\uB825"
+  m_Text: "\uC11C\uBE0C\uBA38\uC2E0\uAC74"
 --- !u!222 &1092231849
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11803,7 +11805,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\uCCB4\uB825"
+  m_Text: "\uC218\uB958\uD0C4"
 --- !u!222 &1185051505
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -22689,7 +22691,7 @@ MonoBehaviour:
   anim: {fileID: 1837929022}
   itemObj:
   - {fileID: 2131783324087398069, guid: 93b2a460ee826f8468dc20d4f1620010, type: 3}
-  - {fileID: 9159802803880631452, guid: ca3dfb29e0089b5449cb0232d5df7a7b, type: 3}
+  - {fileID: 5515766841263828343, guid: 98cc7a11fb086924da9e8d188f7607f9, type: 3}
   - {fileID: 5515766841263828343, guid: 98cc7a11fb086924da9e8d188f7607f9, type: 3}
   itemPrice: e8030000b0040000c4090000
   itemPos:
@@ -23594,7 +23596,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5461052779654786451, guid: 8f5e135a19626f544908fc8f156144b9, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5461052779654786451, guid: 8f5e135a19626f544908fc8f156144b9, type: 3}
       propertyPath: m_TagString
@@ -23881,7 +23883,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1707653096
 RectTransform:
   m_ObjectHideFlags: 0

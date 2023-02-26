@@ -46,6 +46,14 @@ public class GameManager : MonoBehaviour
         maxScoreTxt.text = string.Format(("{0:n0}"),PlayerPrefs.GetInt("MaxScore"));
     }
 
+    void Update()
+    {
+        //싸울때만 플레이타임을 더할것임
+        if(isBattle)
+            playTime  += Time.deltaTime;
+        
+    }
+
     public void GameStart()
     {
         //메뉴 관련 오브젝트 비활성화
@@ -56,5 +64,48 @@ public class GameManager : MonoBehaviour
         gamePanel.SetActive(true);
 
         player.gameObject.SetActive(true); //비활성화해뒀던 플레이어 오브젝트 활성화
+    }
+
+    //LateUpdate : Update()가 끝난 후 호출되는 생명주기
+    void LateUpdate() 
+    {
+        //상단 UI
+        //플레이어 스크립트에서 점수 체력 코인 정보 변수에 저장
+        scoreTxt.text = string.Format(("{0:n0}"),player.score);
+        stageTxt.text = "STAGE " + stage;
+        
+        int hour = (int)(playTime / 3600);
+        int min = (int)((playTime - hour * 3600) / 60); //이미 시간단위로 나눴기 때문에 그 나눈값을 60으로 나눔
+        int second = (int)(playTime % 60); //분을 나눈 나머지값이 초다
+        playTimeTxt.text = string.Format("{0:00}",hour) + ":" + string.Format("{0:00}",min) + ":" + string.Format("{0:00}",second);
+        
+        PlayerHealthTxt.text = player.health + " / " + player.maxHealth;
+        PlayerCoinTxt.text = string.Format(("{0:n0}"),player.coin);
+        
+        //플레이어 UI
+        //만약 플레이어의 장착템이 null이거나 melee라면 표시를 '-' 로 표기
+        if(player.equipweapon == null)
+            PlayerAmmoTxt.text = "- / " + player.ammo;
+        else if(player.equipweapon.type == Weapon.Type.Melee)
+            PlayerAmmoTxt.text = "- / " + player.ammo;
+        else
+            PlayerAmmoTxt.text = player.equipweapon.curAmmo + " / " + player.ammo;
+
+        //무기 UI
+        //무기가 00입니까? [n] 맞다면? 1 아니라면: 0
+        weapon1Img.color = new Color(1,1,1, player.hasWeapons[0] ? 1 : 0); //망치
+        weapon2Img.color = new Color(1,1,1, player.hasWeapons[1] ? 1 : 0); //권총
+        weapon3Img.color = new Color(1,1,1, player.hasWeapons[2] ? 1 : 0); //서브머신건
+        weaponRImg.color = new Color(1,1,1, player.hasGrenades > 0 ? 1 : 0); //수류탄이 0개보단 많다
+
+        //몬스터 숫자 UI
+        //적의 수를 설정하여 문자열로 저장 후 UI에 저장
+        enemyATxt.text = enemyCntA.ToString();
+        enemyBTxt.text = enemyCntB.ToString();
+        enemyCTxt.text = enemyCntC.ToString();
+        
+        //보스 체력 UI
+        //보스의 현재체력에서 최대체력을 나눈값을 X축에 넣어서 크기를 줄여준다
+        bossHealthBar.localScale = new Vector3((float)boss.curHealth / boss.maxHealth,1,1);
     }
 }
