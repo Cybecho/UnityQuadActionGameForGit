@@ -13,6 +13,9 @@ public class Player : MonoBehaviour
     public Camera followCamera;
     public GameManager manager;
     //플레이어에게 탄약 동전 체력 수류탄 변수를 생성
+    
+    public AudioSource jumpSound;
+    
     public int ammo;
     public int coin;
     public int health;
@@ -63,7 +66,7 @@ public class Player : MonoBehaviour
         meshs = GetComponentsInChildren<MeshRenderer>();
         //요소를 여러개 가져올땐 Compent's' 복수형이다
         Debug.Log(PlayerPrefs.GetInt("MaxScore"));
-        PlayerPrefs.SetInt("MaxScore",112500);
+        //PlayerPrefs.SetInt("MaxScore",112500);
         //유니티에서 기본 제공하는 저장기능
     }
 
@@ -148,6 +151,8 @@ public class Player : MonoBehaviour
             anim.SetBool("IsJump", true);
             anim.SetTrigger("doJump");
             isJump = true;
+
+            //jumpSound.Play();
         }
     }
 

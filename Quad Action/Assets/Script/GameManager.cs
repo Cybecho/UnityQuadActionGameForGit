@@ -59,6 +59,11 @@ public class GameManager : MonoBehaviour
         //string.Format() 함수로 문자열 양식을 적용할것이다
         //string.Format("어떤양식을원하는가?",실제 값)
         maxScoreTxt.text = string.Format(("{0:n0}"),PlayerPrefs.GetInt("MaxScore"));
+
+        //최고점수가 저장되어있지 않은 초기상태라면
+        //만약 이 컴퓨터에 MaxScore라는 키가 저장되어있나요?
+        if(PlayerPrefs.HasKey("MaxScore"))
+            PlayerPrefs.SetInt("MaxScore",0);
     }
 
     void Update()

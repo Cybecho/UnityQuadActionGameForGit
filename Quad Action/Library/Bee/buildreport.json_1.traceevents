@@ -1,0 +1,582 @@
+{ "pid": 0, "tid": -1, "ph": "M", "name": "process_name", "args": { "name": "BeeDriver" } },
+{ "pid": 0, "tid": -1, "ph": "M", "name": "process_sort_index", "args": { "sort_index": "-2" } },
+{ "pid": 0, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "" } },
+{ "pid": 0, "tid": 1, "ts": 1677580095667042, "dur": 2206991, "ph": "X", "name": "Build Player", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1677580095667289, "dur": 2827, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1677580095670117, "dur": 31210, "ph": "X", "name": "Run Backend", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1677580095701330, "dur": 869907, "ph": "X", "name": "BuildProgram", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1677580096571238, "dur": 1290876, "ph": "X", "name": "Run Backend", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1677580097862116, "dur": 11917, "ph": "X", "name": "Finish", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1677580097874598, "dur": 13, "ph": "X", "name": "", "args": {} },
+{ "pid": 35942, "tid": -1, "ph": "M", "name": "process_name", "args": { "name": "netcorerun.dll" } },
+{ "pid": 35942, "tid": -1, "ph": "M", "name": "process_sort_index", "args": { "sort_index": "-1" } },
+{ "pid": 35942, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "" } },
+{ "pid": 35942, "tid": 1, "ts": 1677580096212848, "dur": 321338, "ph": "X", "name": "BuildProgram", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1677580096213755, "dur": 41660, "ph": "X", "name": "BuildProgramContextConstructor", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1677580096519442, "dur": 4197, "ph": "X", "name": "OutputData.Write", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1677580096523642, "dur": 10537, "ph": "X", "name": "Backend.Write", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1677580096524275, "dur": 8778, "ph": "X", "name": "JsonToString", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1677580096538275, "dur": 1226, "ph": "X", "name": "", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1677580096537563, "dur": 1962, "ph": "X", "name": "Write chrome-trace events", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1677580097874700, "dur": 222, "ph": "X", "name": "buildprogram0.traceevents", "args": {} },
+{ "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
+,{ "pid":12345, "tid":0, "ts":1677580096605594, "dur":1154, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1677580096606756, "dur":40, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
+,{ "pid":12345, "tid":0, "ts":1677580096606813, "dur":14, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
+,{ "pid":12345, "tid":0, "ts":1677580096606827, "dur":511, "ph":"X", "name": "Tundra",  "args": { "detail":"BuildQueueInit" }}
+,{ "pid":12345, "tid":0, "ts":1677580096607355, "dur":411, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1677580096607766, "dur":1, "ph":"X", "name": "SortWorkingStack",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1677580097826420, "dur":331, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1677580097826751, "dur":20, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1677580097826771, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1677580097826774, "dur":12, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1677580097826787, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1677580097826788, "dur":11, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1677580097826799, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1677580097826801, "dur":8, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1677580097826809, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1677580097826811, "dur":7, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1677580097826818, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1677580097826819, "dur":14, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1677580097826833, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1677580097826835, "dur":9, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1677580097826844, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1677580097826846, "dur":7, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1677580097826853, "dur":39, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1677580097826892, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1677580097826898, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1677580097826900, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1677580097826906, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1677580097826908, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1677580097826913, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1677580097826914, "dur":7, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1677580097826921, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1677580097826923, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1677580097826928, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1677580097826930, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1677580097826935, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1677580097826937, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1677580097826943, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1677580097826945, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1677580097826950, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1677580097826952, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1677580097826957, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1677580097826959, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1677580097826964, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1677580097826966, "dur":8, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1677580097826974, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1677580097826976, "dur":57, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1677580097827034, "dur":0, "ph":"X", "name": "SharedResourceDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1677580097827045, "dur":4, "ph":"X", "name": "BuildQueueDestroyTail",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1677580097827058, "dur":2307, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
+,{ "pid":12345, "tid":1, "ts":1677580096607493, "dur":293, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1677580096607786, "dur":3519, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1677580096611305, "dur":20095, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":1, "ts":1677580096631406, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1677580096631425, "dur":107211, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":1, "ts":1677580096738756, "dur":94620, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1677580096833488, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1677580096833500, "dur":1207, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1677580096834741, "dur":32455, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1677580096867201, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1677580096867232, "dur":998, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1677580096868258, "dur":32519, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1677580096900781, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1677580096900789, "dur":1268, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1677580096902083, "dur":57866, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1677580096959952, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1677580096959959, "dur":1278, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1677580096961269, "dur":29552, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":1, "ts":1677580096990825, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1677580096990833, "dur":1418, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":1, "ts":1677580096992284, "dur":27154, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1677580097019442, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1677580097019450, "dur":1414, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1677580097020899, "dur":152404, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1677580097173308, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1677580097173316, "dur":994, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1677580097174338, "dur":202172, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":1, "ts":1677580097376516, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1677580097376525, "dur":1487, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":1, "ts":1677580097378043, "dur":181332, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":1, "ts":1677580097559379, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1677580097559386, "dur":1072, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":1, "ts":1677580097560499, "dur":265923, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1677580096607450, "dur":322, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1677580096607772, "dur":3526, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1677580096611303, "dur":14446, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":2, "ts":1677580096625752, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1677580096625763, "dur":1426, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":2, "ts":1677580096627247, "dur":109440, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1677580096736701, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1677580096737311, "dur":7442, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1677580096744791, "dur":180750, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1677580096925567, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1677580096925575, "dur":1317, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1677580096926924, "dur":22085, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1677580096949014, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1677580096949023, "dur":989, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1677580096950047, "dur":187602, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1677580097137653, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1677580097137661, "dur":843, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1677580097138533, "dur":695, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/Unity.Services.Core.Device.dll" }}
+,{ "pid":12345, "tid":2, "ts":1677580097139232, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1677580097139239, "dur":902, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/Unity.Services.Core.Device.dll" }}
+,{ "pid":12345, "tid":2, "ts":1677580097140187, "dur":9411, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/Unity.Services.Core.Analytics.dll" }}
+,{ "pid":12345, "tid":2, "ts":1677580097149604, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1677580097149614, "dur":1063, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/Unity.Services.Core.Analytics.dll" }}
+,{ "pid":12345, "tid":2, "ts":1677580097150718, "dur":72843, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":2, "ts":1677580097223565, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1677580097223572, "dur":966, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":2, "ts":1677580097224569, "dur":138137, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":2, "ts":1677580097362735, "dur":12, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1677580097362754, "dur":1072, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":2, "ts":1677580097363860, "dur":178920, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":2, "ts":1677580097542785, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1677580097542793, "dur":978, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":2, "ts":1677580097543802, "dur":282626, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1677580096607489, "dur":291, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1677580096607780, "dur":3514, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1677580096611303, "dur":11787, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":3, "ts":1677580096623096, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1677580096623107, "dur":1207, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":3, "ts":1677580096624360, "dur":113376, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":3, "ts":1677580096737761, "dur":6, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1677580096737772, "dur":2540, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":3, "ts":1677580096740354, "dur":122882, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1677580096863241, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1677580096863249, "dur":1458, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1677580096864744, "dur":38056, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1677580096902804, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1677580096902811, "dur":727, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1677580096903562, "dur":120857, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1677580097024423, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1677580097024432, "dur":998, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1677580097025455, "dur":59298, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1677580097084786, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1677580097084796, "dur":962, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1677580097085794, "dur":439939, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/Unity.Services.Core.Telemetry.dll" }}
+,{ "pid":12345, "tid":3, "ts":1677580097525737, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1677580097525746, "dur":888, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/Unity.Services.Core.Telemetry.dll" }}
+,{ "pid":12345, "tid":3, "ts":1677580097526683, "dur":166, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/StreamingAssets/UnityServicesProjectConfiguration.json" }}
+,{ "pid":12345, "tid":3, "ts":1677580097526853, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1677580097527480, "dur":723, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/StreamingAssets/UnityServicesProjectConfiguration.json" }}
+,{ "pid":12345, "tid":3, "ts":1677580097528234, "dur":27, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":3, "ts":1677580097528263, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1677580097528308, "dur":1102, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":3, "ts":1677580097529440, "dur":27, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":3, "ts":1677580097529469, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1677580097529474, "dur":1522, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":3, "ts":1677580097531023, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":3, "ts":1677580097531059, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1677580097531064, "dur":2319, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":3, "ts":1677580097533413, "dur":122, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":3, "ts":1677580097533538, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1677580097533564, "dur":824, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":3, "ts":1677580097534419, "dur":35541, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":3, "ts":1677580097569964, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1677580097569970, "dur":925, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":3, "ts":1677580097570929, "dur":255488, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1677580096607550, "dur":258, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1677580096607808, "dur":3484, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1677580096611302, "dur":175, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":4, "ts":1677580096611481, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1677580096621255, "dur":123678, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":4, "ts":1677580096744987, "dur":28819, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1677580096773814, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1677580096773826, "dur":1726, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1677580096775611, "dur":52980, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1677580096828595, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1677580096828603, "dur":1946, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1677580096830601, "dur":33449, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1677580096864069, "dur":17, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1677580096864142, "dur":1133, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1677580096865307, "dur":51726, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1677580096917038, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1677580096917046, "dur":6396, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1677580096923491, "dur":158798, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1677580097082296, "dur":12, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1677580097082319, "dur":1081, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1677580097083434, "dur":193010, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/Unity.Services.Core.Threading.dll" }}
+,{ "pid":12345, "tid":4, "ts":1677580097276450, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1677580097276460, "dur":1066, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/Unity.Services.Core.Threading.dll" }}
+,{ "pid":12345, "tid":4, "ts":1677580097277558, "dur":262740, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":4, "ts":1677580097540303, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1677580097540310, "dur":2784, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":4, "ts":1677580097543127, "dur":283302, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1677580096607466, "dur":311, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1677580096607777, "dur":3526, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1677580096611307, "dur":169, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":5, "ts":1677580096611480, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1677580096738950, "dur":4139, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":5, "ts":1677580096743150, "dur":17256, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1677580096760413, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1677580096760475, "dur":1482, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1677580096761995, "dur":66786, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1677580096828786, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1677580096828793, "dur":4221, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1677580096833070, "dur":81099, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1677580096914182, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1677580096914190, "dur":1286, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1677580096915534, "dur":41106, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1677580096956644, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1677580096956652, "dur":1156, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1677580096957847, "dur":74620, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1677580097032472, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1677580097032480, "dur":1053, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1677580097033564, "dur":118884, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":5, "ts":1677580097152452, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1677580097152460, "dur":1167, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":5, "ts":1677580097153653, "dur":339874, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":5, "ts":1677580097493531, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1677580097493540, "dur":1222, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":5, "ts":1677580097494799, "dur":96659, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":5, "ts":1677580097591465, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1677580097591475, "dur":1091, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":5, "ts":1677580097592601, "dur":233819, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1677580096607500, "dur":291, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1677580096607791, "dur":3505, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1677580096611303, "dur":185, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":6, "ts":1677580096611492, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1677580096621433, "dur":118970, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":6, "ts":1677580096740463, "dur":37116, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1677580096777585, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1677580096777641, "dur":1769, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1677580096779491, "dur":140267, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1677580096919765, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1677580096919783, "dur":4845, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1677580096924660, "dur":328367, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1677580097253033, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1677580097253043, "dur":983, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1677580097254058, "dur":209154, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":6, "ts":1677580097463217, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1677580097463225, "dur":874, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":6, "ts":1677580097464127, "dur":358822, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":6, "ts":1677580097822955, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1677580097822965, "dur":3374, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":6, "ts":1677580097826371, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Player" }}
+,{ "pid":12345, "tid":6, "ts":1677580097826373, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1677580096607523, "dur":272, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1677580096607795, "dur":3521, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1677580096611317, "dur":16136, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":7, "ts":1677580096627456, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1677580096627557, "dur":748, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":7, "ts":1677580096628328, "dur":108424, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1677580096736756, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1677580096737321, "dur":7467, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1677580096744869, "dur":83451, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1677580096828326, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1677580096828335, "dur":1929, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1677580096830308, "dur":77641, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1677580096907953, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1677580096907961, "dur":1265, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1677580096909260, "dur":37195, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1677580096946461, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1677580096946471, "dur":1026, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1677580096947525, "dur":17230, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1677580096964760, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1677580096964768, "dur":898, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1677580096965699, "dur":25678, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1677580096991382, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1677580096991391, "dur":1207, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1677580096992634, "dur":29796, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1677580097022434, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1677580097022442, "dur":1497, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1677580097023976, "dur":44098, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1677580097068079, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1677580097068098, "dur":941, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1677580097069066, "dur":501096, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":7, "ts":1677580097570167, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1677580097570175, "dur":1159, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":7, "ts":1677580097571370, "dur":255060, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1677580096607544, "dur":255, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1677580096607799, "dur":3491, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1677580096611303, "dur":37537, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":8, "ts":1677580096648848, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1677580096737536, "dur":1739, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":8, "ts":1677580096739333, "dur":27995, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1677580096767334, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1677580096767346, "dur":1414, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1677580096768794, "dur":103535, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1677580096872333, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1677580096872341, "dur":977, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1677580096873347, "dur":51432, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1677580096924784, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1677580096924801, "dur":1165, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1677580096926002, "dur":120212, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1677580097046220, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1677580097046231, "dur":1067, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1677580097047332, "dur":262250, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":8, "ts":1677580097309589, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1677580097309600, "dur":1811, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":8, "ts":1677580097311449, "dur":256319, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":8, "ts":1677580097567772, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1677580097567781, "dur":955, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":8, "ts":1677580097568762, "dur":257652, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1677580096607561, "dur":252, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1677580096607814, "dur":3492, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1677580096611310, "dur":872, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":9, "ts":1677580096612186, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1677580096613455, "dur":1052762, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":9, "ts":1677580097666254, "dur":160171, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1677580096607586, "dur":231, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1677580096607817, "dur":3499, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1677580096611316, "dur":850, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":10, "ts":1677580096612170, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1677580096613463, "dur":14115, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":10, "ts":1677580096627613, "dur":109081, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1677580096736700, "dur":7, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1677580096737146, "dur":1919, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1677580096739100, "dur":21359, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1677580096760462, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1677580096760555, "dur":1201, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1677580096761791, "dur":163650, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1677580096925445, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1677580096925453, "dur":1152, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1677580096926642, "dur":32914, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1677580096959561, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1677580096959569, "dur":1127, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1677580096960741, "dur":29565, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1677580096990312, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1677580096990320, "dur":1447, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1677580096991809, "dur":18250, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1677580097010065, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1677580097010075, "dur":1093, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1677580097011218, "dur":15032, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1677580097026254, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1677580097026263, "dur":895, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1677580097027185, "dur":63022, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":10, "ts":1677580097090213, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1677580097090222, "dur":992, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":10, "ts":1677580097091246, "dur":47141, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/Unity.Services.Core.Registration.dll" }}
+,{ "pid":12345, "tid":10, "ts":1677580097138391, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1677580097138398, "dur":820, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/Unity.Services.Core.Registration.dll" }}
+,{ "pid":12345, "tid":10, "ts":1677580097139250, "dur":82660, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/Unity.Services.Core.Configuration.dll" }}
+,{ "pid":12345, "tid":10, "ts":1677580097221916, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1677580097221927, "dur":1024, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/Unity.Services.Core.Configuration.dll" }}
+,{ "pid":12345, "tid":10, "ts":1677580097222983, "dur":67829, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":10, "ts":1677580097290818, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1677580097290828, "dur":1041, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":10, "ts":1677580097291919, "dur":261192, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":10, "ts":1677580097553117, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1677580097553127, "dur":2700, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":10, "ts":1677580097555862, "dur":270553, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1677580096607602, "dur":219, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1677580096607821, "dur":3479, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1677580096611303, "dur":622, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":11, "ts":1677580096611929, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1677580096613651, "dur":125179, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":11, "ts":1677580096738947, "dur":39548, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1677580096778764, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1677580096778774, "dur":1995, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1677580096781070, "dur":423577, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1677580097204651, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1677580097204658, "dur":901, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1677580097205590, "dur":371076, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":11, "ts":1677580097576673, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1677580097576681, "dur":1034, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":11, "ts":1677580097577756, "dur":248671, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1677580096607632, "dur":193, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1677580096607825, "dur":3490, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1677580096611315, "dur":21034, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":12, "ts":1677580096632354, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1677580096632366, "dur":105851, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":12, "ts":1677580096738259, "dur":183079, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1677580096921343, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1677580096921351, "dur":3970, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1677580096925357, "dur":285810, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1677580097211171, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1677580097211179, "dur":893, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1677580097212098, "dur":353243, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":12, "ts":1677580097565346, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1677580097565356, "dur":998, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":12, "ts":1677580097566381, "dur":260037, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1677580096607651, "dur":178, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1677580096607829, "dur":3536, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1677580096611366, "dur":643, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":13, "ts":1677580096612011, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1677580096613155, "dur":5016, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":13, "ts":1677580096618205, "dur":124543, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":13, "ts":1677580096742754, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1677580096742849, "dur":5901, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":13, "ts":1677580096748795, "dur":84786, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1677580096833586, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1677580096833595, "dur":1248, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1677580096834881, "dur":79002, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1677580096913890, "dur":27, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1677580096913928, "dur":1379, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1677580096915357, "dur":45121, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1677580096960482, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1677580096960490, "dur":1136, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1677580096961655, "dur":26038, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1677580096987698, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1677580096987734, "dur":989, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1677580096988760, "dur":22126, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1677580097010891, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1677580097010930, "dur":994, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1677580097011976, "dur":63769, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1677580097075750, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1677580097075758, "dur":1026, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1677580097076819, "dur":689853, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":13, "ts":1677580097766677, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1677580097766684, "dur":1406, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":13, "ts":1677580097768143, "dur":58289, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1677580096607673, "dur":159, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1677580096607832, "dur":3564, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1677580096611396, "dur":125299, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":14, "ts":1677580096736701, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1677580096737490, "dur":2382, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":14, "ts":1677580096739932, "dur":24070, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1677580096764007, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1677580096764015, "dur":4356, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1677580096768415, "dur":200853, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":14, "ts":1677580096969272, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1677580096969280, "dur":1018, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":14, "ts":1677580096970327, "dur":161739, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1677580097132071, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1677580097132078, "dur":1587, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1677580097133698, "dur":1173, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/Unity.Services.Core.Environments.Internal.dll" }}
+,{ "pid":12345, "tid":14, "ts":1677580097134875, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1677580097134883, "dur":834, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/Unity.Services.Core.Environments.Internal.dll" }}
+,{ "pid":12345, "tid":14, "ts":1677580097135753, "dur":748, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/Unity.Services.Core.Environments.dll" }}
+,{ "pid":12345, "tid":14, "ts":1677580097136504, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1677580097136510, "dur":1250, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/Unity.Services.Core.Environments.dll" }}
+,{ "pid":12345, "tid":14, "ts":1677580097137792, "dur":25566, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/Unity.Services.Core.dll" }}
+,{ "pid":12345, "tid":14, "ts":1677580097163364, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1677580097163373, "dur":1208, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/Unity.Services.Core.dll" }}
+,{ "pid":12345, "tid":14, "ts":1677580097164609, "dur":214602, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":14, "ts":1677580097379216, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1677580097379225, "dur":1127, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":14, "ts":1677580097380378, "dur":174335, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/Newtonsoft.Json.dll" }}
+,{ "pid":12345, "tid":14, "ts":1677580097554718, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1677580097554728, "dur":1600, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/Newtonsoft.Json.dll" }}
+,{ "pid":12345, "tid":14, "ts":1677580097556371, "dur":270052, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1677580096607688, "dur":147, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1677580096607835, "dur":3495, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1677580096611331, "dur":189, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":15, "ts":1677580096611524, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1677580096621853, "dur":117125, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":15, "ts":1677580096741487, "dur":32417, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1677580096773909, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1677580096773918, "dur":1405, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1677580096775366, "dur":219944, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1677580096995317, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1677580096995328, "dur":1009, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1677580096996378, "dur":263744, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1677580097260128, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1677580097260170, "dur":1126, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1677580097261329, "dur":200442, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":15, "ts":1677580097461775, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1677580097461783, "dur":1289, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":15, "ts":1677580097463104, "dur":71741, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":15, "ts":1677580097534851, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1677580097534857, "dur":1092, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":15, "ts":1677580097535978, "dur":29, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":15, "ts":1677580097536009, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1677580097536014, "dur":1653, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":15, "ts":1677580097537709, "dur":29, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/resources.assets" }}
+,{ "pid":12345, "tid":15, "ts":1677580097537740, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1677580097537746, "dur":1138, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/resources.assets" }}
+,{ "pid":12345, "tid":15, "ts":1677580097538918, "dur":32, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/level0.resS" }}
+,{ "pid":12345, "tid":15, "ts":1677580097538953, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1677580097538959, "dur":857, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/level0.resS" }}
+,{ "pid":12345, "tid":15, "ts":1677580097539841, "dur":22, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/level0" }}
+,{ "pid":12345, "tid":15, "ts":1677580097539865, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1677580097539869, "dur":961, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/level0" }}
+,{ "pid":12345, "tid":15, "ts":1677580097540862, "dur":34, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":15, "ts":1677580097540974, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1677580097540980, "dur":881, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":15, "ts":1677580097541904, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":15, "ts":1677580097541957, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1677580097541961, "dur":1053, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":15, "ts":1677580097543061, "dur":144, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/boot.config" }}
+,{ "pid":12345, "tid":15, "ts":1677580097543208, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1677580097543214, "dur":815, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/boot.config" }}
+,{ "pid":12345, "tid":15, "ts":1677580097544053, "dur":282373, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1677580096607702, "dur":136, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1677580096607838, "dur":3479, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1677580096611317, "dur":845, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":16, "ts":1677580096612165, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1677580096613422, "dur":1046522, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":16, "ts":1677580097659986, "dur":166449, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":17, "ts":1677580096607729, "dur":112, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":17, "ts":1677580096607841, "dur":3469, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":17, "ts":1677580096611314, "dur":218, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":17, "ts":1677580096611534, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":17, "ts":1677580096737927, "dur":18032, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":17, "ts":1677580096756064, "dur":68091, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":17, "ts":1677580096824160, "dur":12, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":17, "ts":1677580096824182, "dur":947, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":17, "ts":1677580096825183, "dur":52093, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":17, "ts":1677580096877282, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":17, "ts":1677580096877291, "dur":1012, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":17, "ts":1677580096878329, "dur":37676, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":17, "ts":1677580096916009, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":17, "ts":1677580096916016, "dur":807, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":17, "ts":1677580096916849, "dur":172244, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":17, "ts":1677580097089098, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":17, "ts":1677580097089105, "dur":1473, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":17, "ts":1677580097090615, "dur":52957, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/Unity.Services.Core.Scheduler.dll" }}
+,{ "pid":12345, "tid":17, "ts":1677580097143577, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":17, "ts":1677580097143616, "dur":1001, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/Unity.Services.Core.Scheduler.dll" }}
+,{ "pid":12345, "tid":17, "ts":1677580097144653, "dur":168330, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":17, "ts":1677580097312986, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":17, "ts":1677580097312993, "dur":1304, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":17, "ts":1677580097314328, "dur":240630, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":17, "ts":1677580097554963, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":17, "ts":1677580097554971, "dur":1739, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":17, "ts":1677580097556750, "dur":269665, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":18, "ts":1677580096607739, "dur":104, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":18, "ts":1677580096607843, "dur":3456, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":18, "ts":1677580096611302, "dur":278, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":18, "ts":1677580096611583, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":18, "ts":1677580096737932, "dur":1004604, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":18, "ts":1677580097742579, "dur":83855, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":19, "ts":1677580096607758, "dur":9, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":19, "ts":1677580096607768, "dur":3519, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":19, "ts":1677580096611303, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
+,{ "pid":12345, "tid":19, "ts":1677580096611311, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":19, "ts":1677580096612716, "dur":402, "ph":"X", "name": "WriteText",  "args": { "detail":"Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
+,{ "pid":12345, "tid":19, "ts":1677580096613122, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/app.info" }}
+,{ "pid":12345, "tid":19, "ts":1677580096613181, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":19, "ts":1677580096613365, "dur":10665, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/app.info" }}
+,{ "pid":12345, "tid":19, "ts":1677580096624032, "dur":475888, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":19, "ts":1677580097099926, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":19, "ts":1677580097099935, "dur":18172, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":19, "ts":1677580097118145, "dur":718, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/Unity.Services.Core.Networking.dll" }}
+,{ "pid":12345, "tid":19, "ts":1677580097118867, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":19, "ts":1677580097118874, "dur":870, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/Unity.Services.Core.Networking.dll" }}
+,{ "pid":12345, "tid":19, "ts":1677580097119781, "dur":464325, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/Unity.Services.Core.Internal.dll" }}
+,{ "pid":12345, "tid":19, "ts":1677580097584113, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":19, "ts":1677580097584124, "dur":1111, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/Unity.Services.Core.Internal.dll" }}
+,{ "pid":12345, "tid":19, "ts":1677580097585264, "dur":241148, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":20, "ts":1677580096607776, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":20, "ts":1677580096607776, "dur":3525, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":20, "ts":1677580096611302, "dur":12198, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":20, "ts":1677580096623505, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":20, "ts":1677580096623593, "dur":1248, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":20, "ts":1677580096624892, "dur":514, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho.exe" }}
+,{ "pid":12345, "tid":20, "ts":1677580096625410, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":20, "ts":1677580096625415, "dur":1720, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho.exe" }}
+,{ "pid":12345, "tid":20, "ts":1677580096627210, "dur":156, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":20, "ts":1677580096627370, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":20, "ts":1677580096627646, "dur":115214, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":20, "ts":1677580096742964, "dur":20265, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":20, "ts":1677580096763235, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":20, "ts":1677580096763276, "dur":984, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":20, "ts":1677580096764294, "dur":288846, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":20, "ts":1677580097053147, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":20, "ts":1677580097053155, "dur":1577, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":20, "ts":1677580097054766, "dur":91805, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":20, "ts":1677580097146576, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":20, "ts":1677580097146585, "dur":1085, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":20, "ts":1677580097147702, "dur":337541, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":20, "ts":1677580097485248, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":20, "ts":1677580097485255, "dur":3185, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":20, "ts":1677580097488465, "dur":259992, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":20, "ts":1677580097748461, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":20, "ts":1677580097748469, "dur":1013, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Unityprojects/UnityQuadActionGameForGit/Build/Quad Action From Cybecho_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":20, "ts":1677580097749507, "dur":76919, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1677580097831262, "dur":2410, "ph":"X", "name": "ProfilerWriteOutput" }
+,{ "pid": 0, "tid": 1, "ts": 1677580097874982, "dur": 951, "ph": "X", "name": "backend_profiler1.traceevents", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1677580097874584, "dur": 1376, "ph": "X", "name": "Write chrome-trace events", "args": {} },
